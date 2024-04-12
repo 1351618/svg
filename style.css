@@ -22,12 +22,33 @@ h3 {
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100wh;
+  width: 100vw;
+  gap: 10px;
+  background-color: #f6f7c3;
 }
-svg {
+#svgUs {
+  transition: height 0.5s ease;
+}
+#svgUs:hover {
+  height: 300px;
+}
+.BRR {
   border: 2px solid #ff0000;
+}
+.BRB {
+  border: 2px solid #001eff;
+}
+.BRG {
+  border: 2px solid #3cff00;
+}
+.DF-r-w-c-c {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }

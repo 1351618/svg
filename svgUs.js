@@ -1,7 +1,7 @@
-const svgUs = document.querySelector(".svgUs");
+const svgUs = document.getElementById("svgUs");
 
-svgUs.setAttribute("width", 300);
-svgUs.setAttribute("height", 300);
+svgUs.setAttribute("width", 400);
+svgUs.setAttribute("height", 100);
 
 // квадрат
 const rectB = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -129,8 +129,8 @@ svgUs.appendChild(zigzag);
 
 // текст
 const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-text.setAttribute("x", 150);
-text.setAttribute("y", 50);
+text.setAttribute("x", 100);
+text.setAttribute("y", 20);
 text.textContent = "Пример текста";
 text.setAttribute("font-size", "19px");
 text.setAttribute("fill", "#000"); // Цвет текста
@@ -186,3 +186,5 @@ polylinePunct.setAttribute("stroke-dashoffset", "4"); // Пример смеще
 polylinePunct.setAttribute("fill", "none");
 polylinePunct.setAttribute("stroke-linecap", "round"); // Скругление концов линии
 svgUs.appendChild(polylinePunct);
+
+//todo  -         svgUs.innerHTML = ""; // очистка svg
